@@ -215,6 +215,8 @@ class SiteMonitor(
 
     override var maliciousSiteStatus: MaliciousSiteStatus? = null
 
+    override var previousNumberOfBlockedTrackers: Int? = null
+
     companion object {
         private val specialDomainTypes = setOf(
             TrackerStatus.AD_ALLOWED,
